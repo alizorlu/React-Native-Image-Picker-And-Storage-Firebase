@@ -4,4 +4,14 @@
 **Package => [npm i firebase]**(https://www.npmjs.com/package/firebase "npm i firebase")
 ## 3-Fetch Blob
 **Package => [npm i react-native-fetch-blob]**(https://www.npmjs.com/package/react-native-fetch-blob "npm i react-native-fetch-blob")
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+
+## the bugs I caught
+Error 1-> _'**:react-native-image-picker'Could not find method testImplementation() for arguments [junit:junit:4.10] on object_**'
+
+#Easy Solution 1-> :'**../node_modules/react-native-image-picker/android/build.gradle**' in dependencies block with start '**testImplementation**' all comment line
+
+
+Error 2-> _'**undefined is not an object (evaluating 'RNFetchBlob.DocumentDir**'_
+#Easy solution 2-> :) npm new package ? :) go to [Fetch-Blob](https://www.npmjs.com/package/react-native-fetch-blob) then use command '**react-native link react-native-fetch-blob**'
+
+
